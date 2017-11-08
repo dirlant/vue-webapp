@@ -10,6 +10,8 @@ Vue.use(VueRouter);
 
 const routes = [
   {path: '/top/:id', name:'top' , component: Top},
+  {path: '/restaurant/:id', name:'restaurant' , component: Restaurant},
+  {path: '/edit-restaurant/:id', name:'edit-restaurant' , component: Restaurant},
   {path: '/restaurant' , component: Restaurant},
   {path: '/contact' , component: Contact},
   {path: '/home' , component: Home},
