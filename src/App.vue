@@ -2,10 +2,13 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
+    <!--
     <home></home>
     <restaurant></restaurant>
     <top></top>
     <contact></contact>
+    -->
+    <router-view></router-view>
     
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Home</a></li>
