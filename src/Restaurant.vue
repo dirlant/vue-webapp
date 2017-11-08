@@ -4,8 +4,10 @@
         <li v-for="(restaurante, index) in restaurantes">
           {{ restaurante.id }} - {{ restaurante.nombre}}
           <p>
-            <router-link :to="{name: 'restaurant', params: {id: restaurante.id }}">ver </router-link>
-            <router-link :to="{name: 'edit-restaurant', params: {id: restaurante.id }}">editar </router-link>
+            <router-link :to="{name: 'restaurant-detail', params: {id: restaurante.id }}">ver </router-link>
+          </p>
+          <p>
+            <router-link :to="{name: 'restaurant-detail', params: {id: restaurante.id }}">editar </router-link>
           </p>
         </li>
       </ol>
@@ -15,6 +17,7 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   name: 'restaurant',
   data () {

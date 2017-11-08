@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" width="100">
     <h1>{{ msg }}</h1>
     <!--
     <home></home>
@@ -8,15 +8,17 @@
     <top></top>
     <contact></contact>
     -->
-    <router-view></router-view>
+    
     
     <ul>
       <li><router-link to="/home">Home</router-link></li>
-      <li><router-link to="/restaurant">Restaurantes</router-link></li>
+      <li><router-link to="/restaurant-add">Agregar</router-link></li>
+      <li><router-link to="/restaurants">Restaurantes</router-link></li>
       <li><router-link :to="{name:  'top', params: {id: 16}}">Destacados</router-link></li>
-      <li><router-link to="/contact">Contacto</router-link></li>
-      
+      <li><router-link to="/contact">Contacto</router-link></li>      
     </ul>
+    <hr>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -25,7 +27,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Esto es la App'
+      msg: 'Esto es la App',
     }
   }
 }

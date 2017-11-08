@@ -5,14 +5,16 @@ import Home from './Home.vue'
 import Restaurant from './Restaurant.vue'
 import Top from './Top.vue'
 import Contact from './Contact.vue'
+import RestaurantDetail from './RestaurantDetail.vue'
+import RestaurantAdd from './RestaurantAdd.vue'
 
 Vue.use(VueRouter);
 
 const routes = [
   {path: '/top/:id', name:'top' , component: Top},
-  {path: '/restaurant/:id', name:'restaurant' , component: Restaurant},
-  {path: '/edit-restaurant/:id', name:'edit-restaurant' , component: Restaurant},
-  {path: '/restaurant' , component: Restaurant},
+  {path: '/restaurant-add/', name:'restaurant-add' , component: RestaurantAdd},
+  {path: '/restaurant-detail/:id', name:'restaurant-detail' , component: RestaurantDetail},
+  {path: '/restaurants' , component: Restaurant},
   {path: '/contact' , component: Contact},
   {path: '/home' , component: Home},
   {path: '/' , component: Home},
