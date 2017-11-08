@@ -7,7 +7,7 @@
             <router-link :to="{name: 'restaurant-detail', params: {id: restaurante.id }}">ver </router-link>
           </p>
           <p>
-            <router-link :to="{name: 'restaurant-detail', params: {id: restaurante.id }}">editar </router-link>
+            <router-link :to="{name: 'restaurant-edit', params: {id: restaurante.id }}">editar </router-link>
           </p>
         </li>
       </ol>
