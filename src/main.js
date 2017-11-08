@@ -9,6 +9,8 @@ import Contact from './Contact.vue'
 Vue.use(VueRouter);
 
 const routes = [
+  {path: '/top/:id', name:'top' , component: Top},
+  {path: '/restaurant' , component: Restaurant},
   {path: '/contact' , component: Contact},
   {path: '/home' , component: Home},
   {path: '/' , component: Home},

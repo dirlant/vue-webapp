@@ -11,10 +11,11 @@
     <router-view></router-view>
     
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Home</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Restaurantes</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Destacados</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Contacto</a></li>
+      <li><router-link to="/home">Home</router-link></li>
+      <li><router-link to="/restaurant">Restaurantes</router-link></li>
+      <li><router-link :to="{name:  'top', params: {id: 16}}">Destacados</router-link></li>
+      <li><router-link to="/contact">Contacto</router-link></li>
+      
     </ul>
   </div>
 </template>
